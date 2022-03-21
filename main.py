@@ -12,7 +12,7 @@ def home():
         mail_msg = f" {email} subscribed for your newsletter."
         with smtplib.SMTP("smtp.gmail.com", port=587) as connection:
             connection.starttls()
-            connection.login(user="ajaxmemo@gmail.com", password="soumya rudra")
+            connection.login(user="ajaxmemo@gmail.com", password="")
             connection.sendmail(
                 from_addr="ajaxmemo@gmail.com",
                 to_addrs="ajaxmemo@gmail.com",
@@ -44,7 +44,7 @@ def contact():
         mail_msg = f"Name : {name}\n Email : {email}\n subject : {subject}\n Message : {message}."
         with smtplib.SMTP("smtp.gmail.com", port=587) as connection:
             connection.starttls()
-            connection.login(user="ajaxmemo@gmail.com", password="soumya rudra")
+            connection.login(user="ajaxmemo@gmail.com", password="")
             connection.sendmail(
                 from_addr="ajaxmemo@gmail.com",
                 to_addrs="ajaxmemo@gmail.com",
